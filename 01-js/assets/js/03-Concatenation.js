@@ -1,7 +1,7 @@
 /*-----------------------------------------------------
                 LA CONCATENATION
 -----------------------------------------------------*/
-var DebutDePhrase = "Aujourd'hui";
+var DebutDePhrase = "Aujourd'hui ";
 var DateDuJour = new Date();
 var SuiteDePhrase = ", sont présent : ";
 var NombreDeStagiaire = 10;
