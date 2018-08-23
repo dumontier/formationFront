@@ -30,6 +30,38 @@ var Prenoms = ['Jean', 'Marc', 'Matthieu', 'Luc', 'Pierre', 'Paul', 'Hugo', 'Jac
  */
 
  for( let i = 0 ; i < Prenoms.length ; i++) {
-     document.write("<p>Les utilisateurs sont "+ prenoms[i] +"</p>");
-    // console.log(Prenoms[k]);
+     document.write(Prenoms[i] + " ");
+    // console.log(Prenoms[i]);
  }
+
+ /*-----------------
+        CORRECTION
+ ------------------*/
+// var Prenoms = ['Jean', 'Marc', 'Matthieu', 'Luc', 'Pierre', 'Paul', 'Hugo', 'Jacques'];
+
+// for (let i = 0; i < Prenoms.length; i++) {
+//     document.write(Prenoms[i]);
+//     // console.log(Prenoms[i]);
+// }
+
+// var nb = Prenoms.length;
+
+// for (let i = 0; i < nb; i++) {
+//     console.log(Prenoms[i]);
+// }
+// console.log('---');
+
+// var j = 0;
+
+// while (j < Prenoms.length) {
+//     console.log(Prenoms[j]);
+//     j++;
+// }
+
+// console.log('---');
+// Prenoms.forEach(afficheUnPrenom);
+
+// // -- ATTENTION A LA PERFORMANCE
+// function afficheUnPrenom(prenom, i) {
+//     console.log(i + ' ' + prenom);
+// }
