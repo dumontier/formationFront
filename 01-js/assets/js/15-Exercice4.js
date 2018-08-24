@@ -15,8 +15,8 @@ var pseudoError = document.getElementsByClassName('pseudoError');
 var ageError = document.getElementsByClassName('ageError');
 
 for(let i = 0 ; i < membres.length; i++){
-    if(pseudo.value = membres[i].pseudo.value){
-        document.write('pseudoError');
+    if (membres[i].pseudo == pseudo.value){
+        
     }
 }
 function helloUser(){
