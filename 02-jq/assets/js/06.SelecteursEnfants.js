@@ -9,7 +9,7 @@ $(function(){
         // Je souhaite sélectionner toutes les DIV de ma page
         l($('div'));
 
-        // Je souhaite sélectionner la balise NAV de ma page
+        // Je souhaite sélectionner la balise NAV (id="menu") de ma page
         l($('#menu'));
 
         // En partant du menu, je souhaite sélectionner, tous les éléments
