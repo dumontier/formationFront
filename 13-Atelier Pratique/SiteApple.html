@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Site Web Apple</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+        crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+<body>
+
+<!-- Début de container -->
+<div class="container-fluid">
+    <!-- Début du header -->
+    <header class="blog-header">
+        <!-- Début de la Nav -->
+        <nav class="navbar justify-content-center link-color:" style=" background: #1e1e1e">
+            <a class="nav-link" href=""><img src="./assets/img/logo.png" alt=""></a>
+            <a class="nav-link active" style="color:white" href="#">Mac</a>
+            <a class="nav-link" style="color:white" href="#">iPad</a>
+            <a class="nav-link" style="color:white" style="color:white" href="#">iPhone</a>
+            <a class="nav-link" style="color:white" href="#">Watch</a>
+            <a class="nav-link" style="color:white" href="#">TV</a>
+            <a class="nav-link" style="color:white" href="#">Music</a>
+            <a class="nav-link" style="color:white" href="#">Assistance</a>
+            <a class="nav-link" style="color:white" href="#"><i class="fas fa-search"></i></a>
+            <a class="nav-link" style="color:white" href="#"><i class="fas fa-lock"></i></a>
+        </nav>
+        <!-- Fin de la Nav -->
+            <!-- Début DIV.nav -->
+            <div class="nav justify-content-center" style="background: #141414">
+                <a class="nav-link" href=""><img src="./assets/img/menu/iPhone7.png" alt=""> </a>
+                <a class="nav-link" href=""><img src="./assets/img/menu/iPhone6s.png" alt=""> </a>
+                <a class="nav-link" href=""><img src="./assets/img/menu/iPhoneSE.png" alt=""> </a>
+                <a class="nav-link" href=""><img src="./assets/img/menu/iOs10.png" alt=""> </a>
+                <a class="nav-link" href=""><img src="./assets/img/menu/Accessoires.png" alt=""> </a>
+                <a class="nav-link" href=""><img src="./assets/img/menu/Comparer.png" alt=""> </a>
+            </div>
+            <!-- fin DIV.nav -->
+    </header>
+    <!-- Fin du header -->
+    <!-- Début main -->
+    <main class="body">
+       
+        <blockquote class="blockquote text-center" style="background: black">
+           <br> 
+            <h2 style="color:white">iphone</h2>
+            <h1 style="color:white">Numéro 7</h1>
+            <h4 style="color:#418bca">En savoir plus >> Acheter ></h4>
+            <p style="color:white">
+            Ou rendez-vous dès aujourd'hui dans un Apple Store
+            </p> <br>
+        </blockquote>
+     
+            <div class="img-fluid" alt="Responsive image">
+               <img src="./assets/img/hero_large.jpg" width="100%">
+            </div>
+                <!-- Début row -->
+                <div class="row">
+                    <div class="col-md-6">
+                                <img src="./assets/img/iPhone.png" class="rounded float-right" alt="">
+                            </div>
+    
+    
+                    <div class="col-md-6">
+                        <div class="text text-center">
+                                <br> <br>
+                                <h2>Passez à l'iPhone 7.</h2>
+                                <br><br>
+                                <p>Échangez votre smartphone contre un iPhone <br>
+                                neuf dans un Apple Store et bénéficiez de <br>
+                            mensualités réduites. </p> <br> 
+                            <h4 style="color: #418bca">
+                            Comment ça marche ? ></h4>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="row justify-content-center" style="background: black">
+                    <div class="col-lg-6">
+                        <form novalidate id="contact" class="form-horizontal">
+                            <div>
+                                <h2 class="title-contact text-center" style="color: white">Contact</h2>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" required placeholder="Nom et Prénom" class="form-control" id="login">
+                            </div>
+
+                        <div class="row row-sm-offset">
+                            <div class="form-group col-md-6 multi-horizontal">
+                                <input type="email" required placeholder="Email" class="form-control" id="email" onBlur="verifEmail(this)">
+                            </div>
+
+                            <div class="form-group col-md-6 multi-horizontal">
+                                <input type="tel" required placeholder="Téléphone" class="form-control" id="tel">
+                            </div>
+                        </div>
+
+                            <div class="form-group">
+                                <input type="text" required placeholder="Sujet" class="form-control" id="sujet">
+                            </div>
+
+                        <div class="form-group" data-for="message">
+                                <textarea type="text" placeholder="Votre Message" name="message" id="message-form1-4t" cols="10" rows="8" class="form-control"></textarea>
+                        </div>
+
+                            <!-- Bouton de soumission -->
+                            <div class="form-group col-md-6">
+                                <button type="submit" class="btn btn-primary btn-block" style="background:#418bca display-4">
+                                    Envoyer ma Demande
+                                </button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </main>
+    <!-- Fin .body -->
+</div> 
+<!-- Fin container-->
+
+<!--class="rounded float-right"-->
+
+<!-- Bibliothèques jQuery, Popper et Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+    
+<!-- Lien avec fichier JS -->
+    <script src="./assets/js/SiteApple.js"></script>
+</body>
+</html>
