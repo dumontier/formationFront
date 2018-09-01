@@ -124,7 +124,7 @@ InscriptionForm.addEventListener('submit', function (event){
 
     const membre = {
         'pseudo': pseudo.value, 
-        'age': pseudo.value, 
+        'age': age.value, 
         'email': email.value, 
         'mdp': mdp.value 
     };
@@ -134,7 +134,7 @@ InscriptionForm.addEventListener('submit', function (event){
 
         // paragraphe 
         const p = document.createElement('p');
-        p.innerHTML = 'Merci' + pseudo.value + ' ! <strong>Tu es maintenant inscrit.</strong><br><br><span>Voici la liste des membres :</span>';
+        p.innerHTML = 'Merci ' + pseudo.value + ' ! <strong>Tu es maintenant inscrit.</strong><br><br><span>Voici la liste des membres :</span>';
         document.body.appendChild(p);
 
         // -- Générer la liste des membres

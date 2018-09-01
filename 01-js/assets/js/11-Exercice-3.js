@@ -154,7 +154,6 @@ de sa moyenne à chaque matière, puis sa moyenne générale.
 //   }
 
 
-
 /*
  I. Créer un Tableau 3D "PremierTrimestre" contenant la moyenne d'un étudiant pour plusieurs matières.
 
@@ -175,84 +174,57 @@ var PremierTrimestre = [
         prenom: "Hugo",
         nom: "LIEGEARD",
         moyenne: {
-            francais: 4,
-            math: 6,
-            physique: 18
+        francais: 4,
+        math: 6,
+        physique: 18
         }
     },
     {
         prenom: "Luc",
         nom: "JOINVIL",
         moyenne: {
-            francais: 4,
-            math: 5,
-            physique: 16,
-            eps: 18,
-            chimie: 17
+        francais: 4,
+        math: 5,
+        physique: 16,
+        eps: 18,
+        chimie: 17
         }
     },
     {
         prenom: "Layla",
         nom: "LAHCENE",
         moyenne: {
-            francais: 17,
-            math: 2,
-            physique: 10,
-            svt: 18,
-            arabe: 10
+        francais: 17,
+        math: 2,
+        physique: 10,
+        svt: 18,
+        arabe: 10
         }
     },
     {
         prenom: "Alpha",
         nom: "DIALLO",
         moyenne: {
-            francais: 12,
-            math: 8,
-            physique: 14,
-            philo: 5,
-            eps: 19
+        francais: 12,
+        math: 8,
+        physique: 14,
+        philo: 5,
+        eps: 19
         }
     },
     {
         prenom: "Elies",
         nom: "KEDIM",
         moyenne: {
-            francais: 2,
-            math: 18,
-            physique: 17,
-            informatique: 15
+        francais: 2,
+        math: 18,
+        physique: 17,
+        informatique: 15
         }
     }
 ];
 
-// console.log(PremierTrimestre);
-// w("<ol>");
-// for (let i = 0; i < PremierTrimestre.length; i++) {
-    
-//     w("<li>" + PremierTrimestre[i].prenom + " " + PremierTrimestre[i].nom + "</li>");
-    
-    
-//     for (let matiere in PremierTrimestre[i].moyenne) {
-//         w("<ul><li>" + matiere + PremierTrimestre[i].moyenne[matiere] + "</li></ul>");
-        
-//     }
-    
-//         var m = PremierTrimestre[i].moyenne.length;
-//         var somme = 0;
-//         somme += PremierTrimestre[i].moyenne.number;
-//         var resultat = somme / m;
-    
-//     for (let i = 0; i <= m; i++) {
-//         w("<li>La moyenne globale = " + resultat + "</li>");
-//     }
-// }
-
-// w("</ol>");
-
-
-
 /*
-
  I. Créer un Tableau 3D "PremierTrimestre" contenant la moyenne d'un étudiant pour plusieurs matières.
     Nous auront donc pour un étudiant, sa moyenne à plusieurs matières.
     Par exemple : Hugo LIEGEARD : [ Francais : 12, Math : 19, Physique 4], ... etc
@@ -260,9 +232,6 @@ var PremierTrimestre = [
 II. Afficher sur la page (à l'aide de document.write) pour chaque étudiant, la liste (ol / ul et li) 
 de sa moyenne à chaque matière, puis sa moyenne générale. 
 */
-
-​
-​
 
 // -- Les Flémards.js  
 w = e => document.write(e);

@@ -1,36 +1,40 @@
-// $("#MonFormulaire").click('submit'(function (event) {
-   
-//     event.preventDefault();
+/************************************************************************** 
+        CONSIGNE : Avec l'aide de jQuery, vous devrez :
 
-//     // $("form").submit(function () {
-//     //     return this.some_flag_variable;
-//     // });​
+        1. A la soumission du formulaire, cacher le formulaire puis:
+        2. Créer un élément < p >
+        3. Dans cet élément, afficher: Bonjour < nomcomplet > correspondant
+        au nom saisie dans le formulaire.
+        Intégration de la librairie jQuery
+**************************************************************************/
 
-// });
+/************************************
+            CORRECTION
+************************************/
 
-// En JS
+$(function(){
 
-// document.getElementById('MonFormulaire').addEventListener('submit' function(){
-//         event.preventDefault();
-// });
+    // document.getElementById('MonFormulaire').addEventListener('submit', function(event) {
 
-$('#MonFormulaire').on('submit', function(){
+    // event.preventDefault();
+    // });
 
-    // Stopper la redirection
-        event.preventDefault();
+    // $("#MonFormulaire").submit(function() {
+    // });
 
-        // (2)
-        // console.log( $(this));
+    $("#MonFormulaire").on('submit', function (e) {
 
-        $('#MonFormulaire').hide();
+        // Stopper la redirection
+        e.preventDefault();
 
-        // Créer une balise dans le body de HTML
-        // puis inserrer le nom & prenom 
-        $('<p>').append('Bonjour ' + $('#nomcomplet').val() + ' !').prependTo('body');
+        console.log($(this));
 
-        // Ou alors
-        // $('<p>Bonjour '+ $('#nomcomplet').val() + ' !</p>').prependTo('body');
+        // Cacher le Formulaire
+        $("#MonFormulaire").hide();
 
-        // Et encore (2)
-        // $(this).replaceWith('<p>Bonjour '+ $('#nomcomplet').val() + ' !</p>');
+        // $('<p>').append('Bonjour ' + $('#nomcomplet').val() + ' !').appendTo('body');
+        // $('<p>Bonjour <strong>' + $('#nomcomplet').val() + '</strong> !</p>').appendTo('body');
+
+        $(this).replaceWith('<p>Bonjour <strong>' + $('#nomcomplet').val() + '</strong> !</p>');
+    })
 });
