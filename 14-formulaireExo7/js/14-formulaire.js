@@ -11,16 +11,19 @@ $(function(){
         var telReg = new RegExp("(0|\\+33|0033)[1-9][0-9]{8}");
         return telReg.test(tel);
     }
+   
+    // Récupération des valeurs de l'utilisateur
+            const nom       = $("#nom");
+            const prenom    = $("#prenom");
+            const email     = $("#email");
+            const tel       = $("#tel");
+
+             $('#contactForm .alert-danger').remove();
+
     // Ecouter le submit
-    $("#contact").submit(function(event){
+    $("#contact").on("submit", function(e) {
 
-        event.preventDefault();
-
-        // Récupération des valeurs de l'utilisateur
-        const nom       = $("#nom");
-        const prenom    = $("#prenom");
-        const email     = $("#email");
-        const tel       = $("#tel");
+        e.preventDefault();
 
         // Validation des inputs
         if(nom.val() === " " || prenom.val() === " " || !validateEmail(email.val()) || !validateTel(tel.val())) {
