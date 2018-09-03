@@ -70,23 +70,23 @@ $(function () {
             tel.addClass('is-valid');
         }
 
-        if ($(this).find('.is-invalid').length === 0) {
+        // if ($(this).find('.is-invalid').length === 0) {
 
-            $(this).replaceWith(`
-        <div class="alert alert-success">
-        Votre message à bien été transmis !
-        nous vous répondrons dans les plus brefs délais.
-        </div>
-        `);
-        } else {
+        //     $(this).replaceWith(`
+        // <div class="alert alert-success">
+        // Votre message à bien été transmis !
+        // nous vous répondrons dans les plus brefs délais.
+        // </div>
+        // `);
+        // } else {
 
-            $(this).prepend(`
-        < div class = "alert alert-danger" >
-        Nous n'avons pas été en mesure de valider votre
-        message. Vérifiez vos informations.
-        </div>
-        `);
-        }
+        //     $(this).prepend(`
+        // < div class ="alert alert-danger" >
+        // Nous n'avons pas été en mesure de valider votre
+        // message. Vérifiez vos informations.
+        // </div>
+        // `);
+        // }
 
     });
 
