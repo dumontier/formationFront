@@ -17,54 +17,51 @@
     <nav class="navbar navbar-dark bg-dark">
       <div class="navbar-header">
         <a href="/" class="navbar-brand">
-          <!--
-          Avec l'expression {{ }} j'affiche
-          le contenu de ma variable
-          -->
+          <!-- Avec l'expression {{ }} j'affiche le contenu de ma variable -->
           {{ title }}
         </a>
       </div>
     </nav>
   </header>
 
-    <div class="row">
+  <div class="row">
 
-      <div class="col-sm-4">
-        <div class="list-group">
-          <a href="#"
-             class="list-group-item list-group-item-action"
-             *ngFor="let contact of mesContacts"
-             [class.active]="contact === contactActif"
-            (click)="showContact(contact)"
-             >
-            {{ contact.name }}
-          </a>
-        </div>
-      </div>
-
-      <div class="col-sm-8">
-        <div class="jumbotron" *ngIf="contactActif">
-          <h1 class="display-4">
-            {{ contactActif.name }}
-          </h1>
-          <p class="lead">
-            {{ contactActif.username }}
-          </p>
-          <hr class="my-4">
-        </div>
-        <div class="jumbotron" *ngIf="!contactActif">
-          <h1 class="display-4">
-            Bienvenue !
-          </h1>
-          <p class="lead">
-            Choisissez un contact...
-          </p>
-          <hr class="my-4">
-        </div>
+    <div class="col-sm-4">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action"
+           *ngFor="let contact of mesContacts"
+           (click)="showContact(contact)"
+           [class.active]="contact === contactActif">
+          {{ contact.name }}
+        </a>
       </div>
     </div>
-  <footer class="text-center">
-    Copyright &copy; 2018 - Le PoleS
 
+    <div class="col-sm-8">
+      <div class="jumbotron" *ngIf="contactActif">
+        <h1 class="display-4">
+          {{ contactActif.name }}
+        </h1>
+        <p class="lead">
+          {{ contactActif.username }}
+        </p>
+        <hr class="my-4">
+      </div>
+
+      <div class="jumbotron" *ngIf="!contactActif">
+        <h1 class="display-4">
+          Bienvenue !
+        </h1>
+        <p class="lead">
+          Choisissez un Contact ...
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="text-center">
+    copyright &copy; 2018 - Le PoleS
   </footer>
+
 </div>

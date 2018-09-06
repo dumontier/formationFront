@@ -1,12 +1,7 @@
-
-/*
-* Pour déclarer une classe comme composant de
-* notre application, on importe "Component" via
-* @angular/core
-*/
+// Pour déclarer une classe comme composant de notre application, on importe 'component' via @angular/core
 import { Component } from '@angular/core';
 
-class contact {
+class Contact {
   id: number;
   name: string;
   username: string;
@@ -16,83 +11,81 @@ class contact {
   website?: string;
   company?: object;
 }
-/*
-* @Component est ce qu'on appel un décorateur.
-* il va nous permettre de définir 3 paramètres
-* essentiels à notre applcation..
-*/
+
+
+
+// @Component ets ce qu'on appel un décorateur. Il va nous permettre de définir 3 paramètres essentiels à notre application...
 @Component({
-  /*
-  * Le sélecteur (selector) détermine la
-  * manière dont le composant sera affiché
-  * dans notre HTML : <app-root></app-root>;
-  * Vous devez OBLIGATOIREMENT avoir la balise
-  * d'ouverture et de fermeture.
-  */
+
+
+
+// Le selecteur (selector) détermine la manière dont le composant sera affiché dans notre HTML : <app-root></app-root>; Vous devez
+// OBLIGATOIREMENT avoir la balise d'ouverture et de fermeture
   selector: 'app-root',
-  /**
-  * "templateUrl" ou "template" est la
-  *partie visible du composant. C'est
-  * ce qui s'affiche à l'écran lorsque
-  * le composant est utilisé.
-  */
+  // "templateUrl" ou "template" ets la partie visible du composant. C'est ce qui s'affiche à l'écran lorsque le composant est utilisé.
+
+
   templateUrl: './app.component.html',
- // template: `
- // <h1>1er pas angular</h1>//`,
+// template: `
+// <h1>{{ title }}</h1>`,
 
   styleUrls: ['./app.component.css']
   // styles: [`
-  // h1 { color: dodgerblue; }
-  // `]
+// h1 { color: mediumpurple;}
+// `]
 })
-/*
-* La classe contient les données du composant,
-* mais aussi, son comportement (ce qu'il fait).
-*/
+
+
+
+// La classe contient les données du composant, mais aussi, son comprtement (ce qu'il fait)
 export class AppComponent {
 
-  // Déclaration d'une Variable
-  title = 'Gestion de contacts';
+  // -- Déclaration d'une variable
+  title = 'Gestion de mes Contacts';
 
-  // Contact Actif;
+  // -- Contact actif
   contactActif: Contact;
 
-  //--Déclaration d'un objet
+  // -- Déclaration d'un objet
   unContact: Contact = {
     id: 1,
-    name: 'Hugo Liegeard',
-    username: 'hugo liegeard',
-    email: 'hugo.liegeard@lepoles.com'
+    name: 'Jonathan BOURDARIAS',
+    username: 'jonathan bourdarias',
+    email: 'jonathan.bourdarias@lepoles.com'
   };
-  mesContacts: Contact[] = [{
-    id: 1,
-    name: 'Hugo Liegeard',
-    username: 'hugo liegeard',
-    email: 'hugo.liegeard@lepoles.com'
-    },
+
+  // -- Tableau de Contacts
+  mesContacts: Contact[] = [
     {
-      id: 2,
-      name: 'Luc Joinvil',
+      id: 153686,
+      name: 'Luc JOINVIL',
       username: 'luc joinvil',
-      email: 'luc.joinvil@lepoles.com'
+      email: 'luc.joinvil@lepoles.org'
     },
     {
-      id: 3,
-      name: 'Alpha Diallo',
+      id: 945617,
+      name: 'Alpha DIALLO',
       username: 'alpha diallo',
-      email: 'alpha.diallo@lepoles.com'
+      email: 'alpha.diallo@lepoles.org'
     },
-      {
-        id: 4,
-        name: 'Layla Lahcene',
-        username: 'layla lahcene',
-        email: 'layla.lahcene@lepoles.com'
-      },
+    {
+      id: 756584,
+      name: 'Hugo LIEGEARD',
+      username: 'hugo liegeard',
+      email: 'hugo.liegeard@lepoles.org'
+    },
+    {
+      id: 354169,
+      name: 'Layla LAHCENE',
+      username: 'layla lahcene',
+      email: 'layla.lahcene@lepoles.org'
+    },
   ];
 
-showContact(contact: {  contactCliqueParMonUtilisateur: Contact }) {
 
-  this.contactActif = contactCliqueParMonUtilisateur;
 
-},
+  showContact(contactCliqueParMonUtilisateur: Contact) {
+    this.contactActif = contactCliqueParMonUtilisateur;
+    console.log(contactCliqueParMonUtilisateur);
+  }
 }
